@@ -65,22 +65,42 @@ export default function NewUser(props) {
         TransitionComponent={Transition}
         keepMounted
         fullWidth
-        maxWidth="sm"
+        maxWidth="ld"
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle>Update Form</DialogTitle>
 
         <DialogContent>
-
+        
           <div>
             <ValidatorForm
               onSubmit={handleSubmit}
               onError={() => null}
               autocomplete="off"
             >
+              <div className="row">
+             
               <Grid container spacing={8}>
-                <Grid item lg={12} md={12} sm={12} xs={12} sx={{ mt: 2 }}>
+
+              <Grid item lg={12} md={12} sm={12} xs={12} sx={{ mt: 2 }}>
+              <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+
+                 </Grid>
+            
+
+                    
+                <Grid item lg={6} md={12} sm={12} xs={12} sx={{ mt: 2 }}>
+                   <h5>jnsgydhu</h5>
                   <TextField
                     type="text"
                     name="fname"
@@ -134,20 +154,139 @@ export default function NewUser(props) {
                     validators={["required"]}
                   />
 
+                </Grid>
 
-                   <TextField
+                
+              <Grid item lg={6} md={6} sm={6} xs={6} sx={{ mt: 2 }}>
+                <h5>djshdsdh</h5>
+              <TextField
                     type="text"
-                    name="clg"
+                    name="fname"
                     id="standard-basic"
-                    value={data.clg || ""}
+                    value={data.fname || ""}
                     onChange={handleChange}
                     errorMessages={["this field is required"]}
-                    label="Collage"
+                    label="First Name "
                     validators={["required"]}
-                  />
+                  /> 
+
+                    <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+
+                    <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+
+                <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+                  
+                   <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> <br/>
+                   {/* <h5 className="mp-5">dhbhddddjbg</h5> */}
+                 </Grid>
+
+                 <Grid item lg={6} md={6} sm={6} xs={6} sx={{ mt: 2 }}>
+               
+               <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+                   <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+                   </Grid>
+
+                  <Grid item lg={6} md={6} sm={6} xs={6} sx={{ mt: 2 }}>
+                   <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+                   <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="First Name "
+                    validators={["required"]}
+                  /> 
+                   </Grid>
+
+                   <Grid item lg={12} md={12} sm={12} xs={12} sx={{ }}>
+                 <TextField
+                    type="text"
+                    name="fname"
+                    id="standard-basic"
+                    value={data.fname || ""}
+                    onChange={handleChange}
+                    errorMessages={["this field is required"]}
+                    label="Price ToTal "
+                    validators={["required"]}
+                  /> 
+
+                 </Grid>
+
+
+
                 </Grid>
-                
-              </Grid>
+
+            
+             
+              
+
+
+              </div>
 
               <div className="container">
                 <div className="row">
@@ -182,6 +321,7 @@ export default function NewUser(props) {
               </div>
             </ValidatorForm>
           </div>
+
         </DialogContent>
       </Dialog>
     </div>
